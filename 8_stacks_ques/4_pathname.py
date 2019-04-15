@@ -8,6 +8,7 @@ def shortest_path(s):
         stack.append('/')
 
     for token in tokens:
+        # Empty and '.' means cur directory, so skip that token
         if token and token != '.':
             if token == '..' and stack:
                 stack.pop()
@@ -23,4 +24,4 @@ if __name__ == '__main__':
     u = 'sc//./../tc/awk/././'
     paths = [s, t, u]
     for path in paths:
-        print(shortest_path(path))
+        print(path + '  ->  ' + shortest_path(path))
