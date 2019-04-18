@@ -14,6 +14,10 @@ class BinaryTree:
 
     # Add new nodes in level-order
     def add(self, x):
+        # Adding None to tree
+        if not x:
+            return
+
         if not self.root:
             self.root = Node(x)
             return

@@ -47,3 +47,7 @@ if __name__ == '__main__':
     tree = BinaryTree(root)
     t = compute(tree)
     print(t)
+
+    tree.add(971)
+    t = compute(tree)
+    print(t)
