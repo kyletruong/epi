@@ -53,3 +53,10 @@ if __name__ == '__main__':
     root.right = Node(2)
     root.left = subroot
     print(is_balanced(root))
+
+    r = Node(2)
+    r.left = Node(2)
+    r.right = Node(2)
+    r.right.right = Node(3)
+    r.left.right = Node(4)
+    print(is_balanced(r))

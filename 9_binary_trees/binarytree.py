@@ -29,10 +29,8 @@ class BinaryTree:
             if not root.left:
                 root.left = Node(x)
                 break
-            else:
-                dq.append(root.left)
             if not root.right:
                 root.right = Node(x)
                 break
-            else:
-                dq.append(root.right)
+            dq.append(root.left)
+            dq.append(root.right)
