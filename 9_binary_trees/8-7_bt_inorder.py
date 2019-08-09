@@ -1,6 +1,8 @@
-# Question from chapter 8
-# Given a binary tree, return array consisting of keys at the same level
-# Keys at the same level are in a subarray in the master array
+"""
+Question from chapter 8
+Given a binary tree, return array consisting of keys at the same level
+Keys at the same level are in a subarray in the master array
+"""
 
 from binarytree import BinaryTree, Node
 from collections import deque

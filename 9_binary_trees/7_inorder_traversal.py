@@ -1,4 +1,4 @@
-# Implement in-order traversal on a binary tree iteratively
+"""Implement in-order traversal on a binary tree iteratively."""
 
 def inorder(root):
     stack, result = [], []

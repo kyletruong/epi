@@ -1,11 +1,14 @@
-# Given two nodes (no parent field) compute the LCA in a binary tree
+"""
+Given two nodes (no parent field) compute the LCA in a binary tree
+"""
 
 from binarytree import BinaryTree
 
 class LCA:
     def __init__(self):
         self.lca_node = None
-    
+
+    # Python classmethods don't require objects similar to static methods
     @classmethod
     def compute(cls, root, p, q):
         if not root:
@@ -32,9 +35,10 @@ class LCA:
         check(root)
         return cls.lca_node.data
 
+
 if __name__ == '__main__':
     bt = BinaryTree()
-    for i in range(1,16):
+    for i in range(1, 16):
         bt.add(i)
     p = bt.root.left.left.right
     q = bt.root.left.right.right
