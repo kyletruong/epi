@@ -22,9 +22,11 @@ def partitionArray(array, k1, k2):
 
 if __name__ == "__main__":
     myList = []
+    low, high = 33, 66
     for i in range(20):
         myList.append(random.randint(0, 100))
 
+    print(f'low = {low}, high = {high}')
     print(myList)
-    partitionArray(myList, 30, 70)
+    partitionArray(myList, low, high)
     print(myList)
